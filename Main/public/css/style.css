@@ -1,0 +1,131 @@
+header,
+.project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.dollar-amount {
+  color: #056605;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-image: url(/img/neighbourbase.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+}
+
+.topSection {
+  background-color: #2b2725;
+  color: white;
+}
+
+.topSection a {
+  color: white;
+}
+
+.heading {
+  background-color: rgb(107, 179, 235, 0.5);
+  padding: 20px;
+}
+
+.topLogo {
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Pacifico', cursive;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+}
+
+.card-header {
+  background-color: rgb(107, 179, 235, 0.9);
+  font-weight: 700;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+.heart-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.heart-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.heart-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 14px;
+  height: 12px;
+  background-image: url('/img/hearIcon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-primary {
+  background-color: #230456;
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: white;
+  border: 0;
+}
+
+
+footer {
+  background-color: #230456;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+@media (max-width: 767px) {
+  .heading {
+    background-position: center center;
+  }
+}

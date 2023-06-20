@@ -1,0 +1,25 @@
+.sticky-p {
+    font-family: 'Reenie Beanie';
+    font-size: 2rem;
+}
+
+.sticky-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sticky-ul .sticky-li .sticky-span {
+    text-decoration: none;
+    color: #000;
+    background: #ffc;
+    display: block;
+    height: 35em;
+    width: 35em;
+    padding: 1em;
+    transform: rotate(-6deg);
+}
+
+.sticky-ul .sticky-li {
+    margin: 1em;
+}

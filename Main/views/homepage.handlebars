@@ -1,0 +1,111 @@
+<section id="topLogo">
+    <div class="container-fluid heading">
+      <div class="row">
+        <div class="col-12 text-center p-2">
+          <h1>Neighbourhood Library</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="/img/ShelfFull.png" width="100%" style="max-width: 400px;">
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<main>
+
+    <div class="container p-5">
+        <div class="row">
+          <div class="col-md-6 pb-4">
+            <div class="card">
+              <div class="card-header text-white">
+                IT'S ABOUT COMMUNITY
+              </div>
+              <div class="card-body bg-white">
+                <p>A community library lending website serves as an invaluable resource, fostering a sense of shared knowledge and facilitating access to a wide range of books and educational materials.</p>
+                     
+                <p> Users can login, then make their own books available for lending or check what books their neighbours have to offer. Fostering invaluable knowledge and fellowship with your local neighbours.</p>              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header text-white">
+                IT'S AS EASY AS 1, 2, 3
+              </div>
+              <div class="card-body bg-white">
+
+                <ul class="heart-list">
+                    <li>Register as a participant in your local neighbourhood.</li>
+                    <li>Login to see all the awesome books offered by your neighbours.</li>
+                    <li>Request a book, or enter titles from your own bookshelf to offer to neighbours.</li>
+                  </ul>
+             <div class="text-center">
+                  <a class="btn btn-primary" href="/login" role="button">register</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+{{!-- <!-- Loop over each object in the books array -->
+{{#each books as |book| }}
+<div class="row mb-4 book">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/book/{{book.id}}">{{book.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="money">💲</span>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="dollar-amount">{{format_amount book.needed_funding}}</span>
+      needed for books!
+    </p>
+    <p>Added to the library on {{format_date book.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{book.description}}
+    </p>
+    <p>This book is located in the {{book.location}} section of the library.</p>
+  </div>
+</div>
+{{/each}} --}}
+
+
+{{!-- <!-- Loop over each object in the projects array -->
+{{#each projects as |project| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/project/{{project.id}}">{{project.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="money">💲</span>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
+      needed!
+    </p>
+    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{project.description}}
+    </p>
+  </div>
+</div>
+{{/each}} --}}

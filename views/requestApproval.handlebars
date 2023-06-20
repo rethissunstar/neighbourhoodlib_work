@@ -1,0 +1,29 @@
+<ul class="sticky-ul">
+  <li class="sticky-li">
+    <span class="sticky-span">
+      <h2 style="text-align: center;">Thank you {{first_name}} for borrowing my book!!</h2>
+      <p class="sticky-p" style="text-align: center;"><strong>Book Loan Information</strong></p>
+      <p class="sticky-p"><strong>Book Title:</strong> {{title}}</p>
+      <p class="sticky-p"><strong>Book Owner:</strong> {{owner_name}}</p>
+      <p class="sticky-p"><strong>Due Date:</strong> {{estimated_due}}</p>
+      <p class="sticky-p"><strong>Request Status:</strong> {{request_state}}</p>
+    </span>
+    
+  </li>
+  
+</ul>
+
+{{!-- // books we have to offer --}}
+
+{{!-- {{#each ressticky-ult as |books| }}
+<div class="row mb-4 project">
+    <div class="col-md-5">
+        <h1>fucking endpoint works, this is the ID:{{books.author}}</h1>
+    </div>
+
+</div>
+{{/each}} --}}
+
+
+
+{{!-- //which books have already been borrowed --}}

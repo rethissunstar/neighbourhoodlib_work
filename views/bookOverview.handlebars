@@ -1,0 +1,35 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap");
+</style>
+
+
+<div class="book-main container container-fluid mt-5">
+    <div class="book">
+        <div class="book-cover">
+            <div>
+                <h1 class="book-h1">{{title}}</h1>
+                <div class="separator"></div>
+                <h2 class="book-h2">{{author}}</h2>
+            </div>
+        </div>
+        <div class="book-content">
+            <h3 class="book-h3">{{title}}</h3>
+            <h3 class="book-h3">Author: {{author}} </h3>
+            <h3 class="book-h3">Genre: {{genre}}</h3>
+            <h3 class="book-h3">Series: {{part_of_series}}</h3>
+            <h3 class="book-h3">Synopsis</h3>
+            <p class="book-p">{{book_synopsis}}</p>
+            <h3 class="book-h3">Due Date:</h3>
+            <p class="book-p"><input type="date" id="due-date" data-dformat="2017-05-25" value=""></p>
+            <h3 class="book-h3">Owner: {{first_name}} {{last_name}}</h3>
+
+            
+            <div class="borrow-book" style="margin-bottom: 15px;text-align: center;">
+                <button class="fcc-btn" data-id="{{book_id}}-{{user_id}}">Borrow It</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/bookRequest.js"></script>
