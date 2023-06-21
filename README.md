@@ -29,10 +29,16 @@ Screenshots: ![Neighbourhoodlibrary](public/img/screencapture-127-0-0-1-5501-ind
 ![ce715e782cd7db26f429c33e42ec0406](https://github.com/cherah-petra/NeighbourhoodLibrary/assets/33495492/0102270e-3da6-4b2d-8373-43ea3d15b562)
  ![9c9bacbc39139fc03a819a0dd2fd552e](https://github.com/cherah-petra/NeighbourhoodLibrary/assets/33495492/b5419e72-9c80-4480-8a94-e64615ac4b2b)
 
+## Collaborators 
+
+- Cheryl Muschallik (https://github.com/cherah-petra/)
+- Christopher Rodrigues (https://github.com/rethissunstar/)
+- Boris Cabrera (https://github.com/boro101094/)
+- Keegan Omel (https://github.com/Keegan-Omel/)
 
 ## Credit
 
-- Starter code by a-nyx from 12-Stu_Connect-Node
+- Starter code by a-nyx from 28-Stu_Mini-Project
 - node-qrcode (https://www.npmjs.com/package/qrcode)
 - Creating QR Codes Resource (https://blog.logrocket.com/create-read-qr-codes-node-js/)
 
@@ -40,6 +46,3 @@ Screenshots: ![Neighbourhoodlibrary](public/img/screencapture-127-0-0-1-5501-ind
 
 - GitHub repository URL: https://github.com/cherah-petra/NeighbourhoodLibrary
 - Heroku Page: https://neighbourhood-library-65950eb0f456.herokuapp.com/
-
-## Collaboration
-Boris, Cheryl, Chris Rodrigues, Keegan
